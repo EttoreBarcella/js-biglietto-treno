@@ -5,6 +5,7 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
+
 // 1. Chiedo all'utente il numero di chilometri che vuole percorrere (0,21 euro x km)
 const x = Number(prompt("Buongiorno, quanti chilometri vuole percorrere?"))
 // 2. Chiedo all'utente la sua età
@@ -13,10 +14,12 @@ const y = Number(prompt("Buongiorno, quanti anni ha?"))
 // SE età < di 18 avrò >>> N. KM 20%
 // SE età > di 65 avrò >>> N KM 40%
 let z = 0.21 * x
+let zDecimal = z.toFixed(1)
 console.log(z)
 if (y < 18){
-    console.log(( z * 20) / 100)
+    console.log(( zDecimal * 20) / 100)
+
 }
-if (y > 65){
-    console.log(( z * 40) / 100)
+if (y > 65){    
+    console.log(( zDecimal * 40) / 100)
 }
