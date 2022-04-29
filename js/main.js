@@ -12,14 +12,14 @@ const x = Number(prompt("Buongiorno, quanti chilometri vuole percorrere?"))
 const y = Number(prompt("Buongiorno, quanti anni ha?"))
 // 3. Calcolo il prezzo del biglietto sapendo che OGNI km = 0,21 euro e il risultato deve avere formato 0,00 euro:
 // SE età < di 18 avrò >>> N. KM 20%
-// SE età > di 65 avrò >>> N KM 40%
+// SE INVECE età > di 65 avrò >>> N KM 40%
+// ALTTRIMENTI prezzo pieno
 let z = 0.21 * x.toFixed(1)
 
 if (y < 18){
     console.log(( z * 20) / 100)
 
-}
-if (y > 65){    
+}if else(y > 65){    
     console.log(( z * 40) / 100)
 } else{
     console.log(z)
