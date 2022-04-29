@@ -19,7 +19,7 @@ let z = 0.21 * x.toFixed(1)
 if (y < 18){
     console.log(( z * 20) / 100)
 
-}if else(y > 65){    
+}else if(y > 65){    
     console.log(( z * 40) / 100)
 } else{
     console.log(z)
